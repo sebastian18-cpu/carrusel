@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KarrusWL - Carrusel estilo Netflix</title>
+    <link rel="stylesheet" href="ss/carrusel.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <span class="brand-label">KarrusWL</span>
+                <h1>Un carrusel oscuro con acceso seguro</h1>
+                <p>Inicia sesión para activar el carrusel y explora contenido con un diseño inspirado en Netflix.</p>
+            </div>
+            <div class="topbar-actions">
+                <button class="secondary">Iniciar sesión</button>
+                <button>Empezar a vender</button>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <section class="carousel-section">
+                <div class="carousel-card">
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=700&fit=crop" alt="Montañas Nevadas">
+                                <div class="slide-caption">Montañas Nevadas</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&h=700&fit=crop" alt="Lago Alpino">
+                                <div class="slide-caption">Lago Alpino</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=1200&h=700&fit=crop" alt="Bosque Otoñal">
+                                <div class="slide-caption">Bosque Otoñal</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=700&fit=crop" alt="Playa Tropical">
+                                <div class="slide-caption">Playa Tropical</div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=1200&h=700&fit=crop" alt="Desierto Dorado">
+                                <div class="slide-caption">Desierto Dorado</div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn prev" id="prevBtn" disabled>❮</button>
+                        <button class="carousel-btn next" id="nextBtn" disabled>❯</button>
+
+                        <div class="carousel-indicators">
+                            <span class="dot" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                            <span class="dot" data-index="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="login-section">
+                <div class="login-panel">
+                    <div class="login-header">
+                        <span class="login-badge">Acceso rápido</span>
+                        <h2>Inicia con contraseña</h2>
+                    </div>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" placeholder="Ingresa la contraseña" required>
+                        </div>
+                        <button type="submit" class="btn-login">Acceder</button>
+                        <div id="loginError" class="error-message">Contraseña incorrecta</div>
+                        <div id="loginSuccess" class="success-message">¡Acceso permitido! El carrusel se activó.</div>
+                    </form>
+                    <div class="login-info">
+                        <p>Usa la contraseña <strong>paisajes2024</strong> para activar el carrusel.</p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="js/apps.js"></script>
+</body>
+</html>
